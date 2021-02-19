@@ -17,7 +17,7 @@ If it helps, please give a star.🤩
 ```
 allprojects {
     repositories {
-        maven { url "https://jcenter.bintray.com" }
+        maven { url 'https://jitpack.io' }
     }
 }
 ```
@@ -25,7 +25,7 @@ allprojects {
 + Then, add the library to your module build.gradle
 
 ```
-implementation  'com.jlertele.widget:sidebar:1.0.0'
+implementation  'com.github.Leo199206:SideBar:1.0.1'
 ```
 
 #### import layout

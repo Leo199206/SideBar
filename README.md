@@ -19,7 +19,7 @@
 ```
 allprojects {
     repositories {
-        maven { url "https://jcenter.bintray.com" }
+        maven { url 'https://jitpack.io' }
     }
 }
 ```
@@ -27,7 +27,7 @@ allprojects {
 + 添加以下maven依赖配置到app模块，gradle文件下
 
 ```
-implementation  'com.jlertele.sidebar:SideBar:1.0.0'
+implementation  'com.github.Leo199206:SideBar:1.0.1'
 ```
 
 #### 添加到布局
