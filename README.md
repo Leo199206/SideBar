@@ -27,7 +27,7 @@ allprojects {
 + 添加以下maven依赖配置到app模块，gradle文件下
 
 ```
-implementation  'com.jlertele.widget:SideBar:1.0.0'
+implementation  'com.jlertele.sidebar:SideBar:1.0.0'
 ```
 
 #### 添加到布局

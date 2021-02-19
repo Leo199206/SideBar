@@ -25,7 +25,7 @@ allprojects {
 + Then, add the library to your module build.gradle
 
 ```
-implementation  'com.jlertele.widget:SideBar:1.0.0'
+implementation  'com.jlertele.widget:sidebar:1.0.0'
 ```
 
 #### import layout

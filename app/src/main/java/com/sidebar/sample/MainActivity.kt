@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), SideBarView.OnSideBarListener {
         TextEntity("F", mutableListOf("风的季节", "风声", "封装", "封闭", "烽火狼烟")),
         TextEntity("G", mutableListOf("格式", "鸽子", "归仁", "盖子", "噶油")),
         TextEntity("L", mutableListOf("里程", "琉璃", "流星雨")),
-        TextEntity("Z", mutableListOf("中心", "中间", "桌子", "琢磨")),
+        TextEntity("Z", mutableListOf("中心", "中间", "桌子", "琢磨"))
     )
     private val indexMap = HashMap<String, Int>()
 
