@@ -41,8 +41,8 @@ class MainActivity : AppCompatActivity(), SideBarView.OnSideBarListener {
      */
     private fun initListData() {
         val data = mutableListOf<String>()
-        testData.forEachIndexed { index, textEntity ->
-            indexMap[textEntity.latter] = index
+        testData.forEachIndexed { _, textEntity ->
+            indexMap[textEntity.latter] = data.size
             data.add((textEntity.latter))
             textEntity.data.forEach {
                 data.add(it)
@@ -79,8 +79,21 @@ class MainActivity : AppCompatActivity(), SideBarView.OnSideBarListener {
         currentY: Float,
         selectedValue: String?
     ) {
+        scrollPosition(selectedValue)
         side_hint.translationY = currentY
         side_hint.text = selectedValue
         side_hint.visibility = View.VISIBLE
+    }
+
+
+    /**
+     * scroll to Recycler position
+     * @param selectedValue String
+     */
+    private fun scrollPosition(selectedValue: String?) {
+        val index: Int? = indexMap[selectedValue]
+        if (index != null) {
+            recycler.smoothScrollToPosition(index)
+        }
     }
 }
