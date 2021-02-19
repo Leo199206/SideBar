@@ -6,13 +6,39 @@
     android:layout_height="match_parent"
     tools:context="com.sidebar.sample.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.jlertele.sidebar.SideBarView
+        android:id="@+id/side_bar"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sideItemHeight="18dp"
+        app:sidePressedTextBgColor="@android:color/holo_orange_dark"
+        app:sidePressedTextColor="@color/white"
+        app:sideTextColor="@color/black"
+        app:sideTextSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/side_hint"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_side_hint"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@id/side_bar"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

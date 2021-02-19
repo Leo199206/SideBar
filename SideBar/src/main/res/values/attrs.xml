@@ -5,12 +5,13 @@
         <attr name="sidePressedTextColor" format="reference" />
         <attr name="sidePressedTextBgColor" format="reference" />
         <attr name="sideItemHeight" format="dimension" />
+        <attr name="sideItemSpacing" format="dimension" />
         <attr name="sideTextSize" format="dimension" />
     </declare-styleable>
 
     <declare-styleable name="SideBarHintView">
         <attr name="sideHintTextColor" format="reference" />
-        <attr name="sideHintTextSize" format="reference" />
+        <attr name="sideHintTextSize" format="dimension" />
         <attr name="sideHintTextOffsetX" format="dimension" />
     </declare-styleable>
 </resources>
