@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:sideItemHeight="18dp"
+        app:sideItemSpacing="10dp"
         app:sidePressedTextBgColor="@android:color/holo_orange_dark"
         app:sidePressedTextColor="@color/white"
         app:sideTextColor="@color/black"

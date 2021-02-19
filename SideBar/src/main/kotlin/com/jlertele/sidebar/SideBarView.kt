@@ -11,6 +11,7 @@ import android.view.View
 import androidx.annotation.ColorInt
 import androidx.annotation.Dimension
 import java.util.*
+import kotlin.math.abs
 
 /**
  * <pre>
@@ -53,6 +54,12 @@ class SideBarView : View {
      */
     @Dimension
     private var itemHeight = 0
+
+    /**
+     * 文字间距
+     */
+    @Dimension
+    private var itemSpacing = 10
 
     /**
      * 文字大小
@@ -111,11 +118,12 @@ class SideBarView : View {
             measureSize(widthMeasureSpec, 75).also {
                 viewWidth = it
             },
-            measureSize(heightMeasureSpec, 75).also {
+            measureSize(
+                heightMeasureSpec, itemHeight * letters.size + itemSpacing
+            ).also {
                 viewHeight = it
-            }
-        )
-        itemStartY = (viewHeight - itemHeight * letters.size) * 0.5f
+            })
+        itemStartY = top + (itemSpacing * 0.5f)
     }
 
     /**
@@ -135,10 +143,11 @@ class SideBarView : View {
             R.styleable.SideBarView_sidePressedTextBgColor,
             Color.TRANSPARENT
         )
-        sideTextColor =
-            array.getColor(R.styleable.SideBarView_sideTextColor, Color.BLACK)
-        itemHeight = array.getDimensionPixelOffset(R.styleable.SideBarView_sideItemHeight, 18)
+        sideTextColor = array.getColor(R.styleable.SideBarView_sideTextColor, Color.BLACK)
+        itemSpacing = array.getDimensionPixelOffset(R.styleable.SideBarView_sideItemSpacing, 10)
         textSize = array.getDimensionPixelOffset(R.styleable.SideBarView_sideTextSize, 13)
+        itemHeight = array.getDimensionPixelOffset(R.styleable.SideBarView_sideItemHeight, textSize)
+        itemHeight += itemSpacing
         array.recycle()
     }
 
@@ -172,14 +181,15 @@ class SideBarView : View {
             val text = letters[i]
             val textWidth = textPaint!!.measureText(text)
             val drawX = (viewWidth - textWidth) * 0.5f
+            val textHeight = (abs(textPaint!!.ascent()) - textPaint!!.descent()) / 2
             val drawY =
-                itemHeight * i + itemHeight * 0.5f + (Math.abs(textPaint!!.ascent()) - textPaint!!.descent()) / 2 + itemStartY
+                itemHeight * i + itemHeight * 0.5f + textHeight + itemStartY
             if (i == choosePosition) {
                 textPaint!!.color = pressedTextColor
                 bgPaint!!.color = pressedTextBgColor
                 val cx = (drawX + textWidth * 0.5).toFloat()
                 val cy =
-                    drawY - (Math.abs(textPaint!!.ascent()) - textPaint!!.descent()) / 2
+                    drawY - textHeight
                 val radius = textSize / 2 + textSize * 0.2f
                 canvas.drawCircle(cx, cy, radius, bgPaint!!)
             } else {
@@ -274,7 +284,7 @@ class SideBarView : View {
         } else {
             result = defaultSize
             if (mode == MeasureSpec.AT_MOST) {
-                result = Math.min(result, size)
+                result = result.coerceAtMost(size)
             }
         }
         return result

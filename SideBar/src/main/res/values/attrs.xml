@@ -9,9 +9,4 @@
         <attr name="sideTextSize" format="dimension" />
     </declare-styleable>
 
-    <declare-styleable name="SideBarHintView">
-        <attr name="sideHintTextColor" format="reference" />
-        <attr name="sideHintTextSize" format="dimension" />
-        <attr name="sideHintTextOffsetX" format="dimension" />
-    </declare-styleable>
 </resources>
