@@ -1,11 +1,10 @@
 #### Instructions for use document
+> If it helps, please give a star.🤩
 [中文说明文档](https://raw.githubusercontent.com/Leo199206/SideBar/main/README.md)
 
 + kotlin language development
 + Side quick index effect
 + Flexible and configurable api, customizable style
-
-If it helps, please give a star.🤩
 
 #### Style preview
 <img src="https://raw.githubusercontent.com/Leo199206/SideBar/main/image/device-2021-02-19-132024.gif" width="300" heght="500" align=center />

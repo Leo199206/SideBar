@@ -1,12 +1,13 @@
 #### 使用说明文档
+> 目前该库已在公司项目中使用，有问题欢迎提issue。
+> 如果该库对你有帮助，请动动你的小手指，给个star哦🤩     
+
 [English documentation](https://raw.githubusercontent.com/Leo199206/SideBar/main/README_EN.md)
 
 + kotlin语言开发
 + 列表快速索引控件（微信联系人，字母索引效果）
 + API灵活，可自定义配置不同颜色及样式
 
-目前该库已在公司项目中使用，有问题欢迎提issue。
-如果该库对你有帮助，请动动你的小手指，给个star哦🤩
 
 
 #### 效果预览
