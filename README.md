@@ -1,7 +1,7 @@
 #### 使用说明文档
 [English documentation](https://github.com/Leo199206/SideBar/blob/master/README_EN.md)
 
-+ kotlin language development
++ kotlin语言开发
 + 列表快速索引控件（微信联系人，字母索引效果）
 + API灵活，可自定义配置不同颜色及样式
 
