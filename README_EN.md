@@ -24,7 +24,7 @@ allprojects {
 + Then, add the library to your module build.gradle
 
 ```
-implementation  'com.github.Leo199206:SideBar:1.0.1'
+implementation  'com.github.Leo199206:SideBar:1.0.0'
 ```
 
 #### import layout
