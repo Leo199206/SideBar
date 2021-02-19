@@ -1,5 +1,5 @@
 #### 使用说明文档
-[English documentation](https://github.com/Leo199206/SideBar/blob/master/README_EN.md)
+[English documentation](https://raw.githubusercontent.com/Leo199206/SideBar/main/README_EN.md)
 
 + kotlin语言开发
 + 列表快速索引控件（微信联系人，字母索引效果）
@@ -10,7 +10,7 @@
 
 
 #### 效果预览
-<img src="https://github.com/Leo199206/SideBar/blob/main/image/device-2021-02-19-132024.gif?raw=true" width="300" heght="500" align=center />
+<img src="https://raw.githubusercontent.com/Leo199206/SideBar/main/image/device-2021-02-19-132024.gif" width="300" heght="500" align=center />
 
 
 #### 依赖
@@ -116,5 +116,4 @@ implementation  'com.github.Leo199206:SideBar:1.0.1'
 | sideItemHeight | item高度，不设置时，默认拿字体大小作为高度 |
 
 #### LICENSE
-SideBar is under the Apache License Version 2.0. See the [LICENSE](https://raw.githubusercontent.com/Leo199206/SideBar/master/LICENSE) file for details.
-
+SideBar is under the Apache License Version 2.0. See the [LICENSE](https://raw.githubusercontent.com/Leo199206/SideBar/main/LICENSE) file for details.

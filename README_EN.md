@@ -1,5 +1,5 @@
 #### Instructions for use document
-[中文说明文档](https://github.com/Leo199206/SideBar/blob/master/README.md)
+[中文说明文档](https://raw.githubusercontent.com/Leo199206/SideBar/main/README.md)
 
 + kotlin language development
 + Side quick index effect
@@ -8,7 +8,7 @@
 If it helps, please give a star.🤩
 
 #### Style preview
-<img src="https://github.com/Leo199206/SideBar/blob/main/image/device-2021-02-19-132024.gif?raw=true" width="300" heght="500" align=center />
+<img src="https://raw.githubusercontent.com/Leo199206/SideBar/main/image/device-2021-02-19-132024.gif" width="300" heght="500" align=center />
 
 
 #### Dependency
@@ -111,4 +111,4 @@ implementation  'com.github.Leo199206:SideBar:1.0.1'
 | sideItemHeight | item Height, When not set, the default is font size height |
 
 #### LICENSE
-SideBar is under the Apache License Version 2.0. See the [LICENSE](https://raw.githubusercontent.com/Leo199206/SideBar/master/LICENSE) file for details.
+SideBar is under the Apache License Version 2.0. See the [LICENSE](https://raw.githubusercontent.com/Leo199206/SideBar/main/LICENSE) file for details.
