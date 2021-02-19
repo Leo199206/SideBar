@@ -8,7 +8,7 @@
 If it helps, please give a star.🤩
 
 #### Style preview
-<img src="https://github.com/Leo199206/SideBar/blob/master/device-2021-01-21-171055.gif?raw=true" width="300" heght="500" align=center />
+<img src="https://github.com/Leo199206/SideBar/blob/main/image/device-2021-02-19-132024.gif?raw=true" width="300" heght="500" align=center />
 
 
 #### Dependency
@@ -105,12 +105,10 @@ implementation  'com.github.Leo199206:SideBar:1.0.1'
 | --- | --- |
 | sideTextColor | When not selected, the font color |
 | sidePressedTextColor | When pressed to select, the font color |
-| sidePressedTextBgColor | 
-When pressed to select, the font background color |
+| sidePressedTextBgColor | When pressed to select, the font background color |
 | sideTextSize | font size | 
 | sideItemSpacing | item Spacing, default is 10 |
-| sideItemHeight | item Height,
-When not set, the default is font size height |
+| sideItemHeight | item Height, When not set, the default is font size height |
 
 #### LICENSE
 SideBar is under the Apache License Version 2.0. See the [LICENSE](https://raw.githubusercontent.com/Leo199206/SideBar/master/LICENSE) file for details.

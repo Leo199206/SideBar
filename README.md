@@ -10,7 +10,7 @@
 
 
 #### 效果预览
-<img src="https://github.com/Leo199206/SideBar/blob/master/device-2021-02-19-132024.gif?raw=true" width="300" heght="500" align=center />
+<img src="https://github.com/Leo199206/SideBar/blob/main/image/device-2021-02-19-132024.gif?raw=true" width="300" heght="500" align=center />
 
 
 #### 依赖
