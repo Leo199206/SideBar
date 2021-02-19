@@ -1,20 +1,18 @@
-#### 使用说明文档
-[English documentation](https://github.com/Leo199206/SideBar/blob/master/README_EN.md)
+#### Instructions for use document
+[中文说明文档](https://github.com/Leo199206/SideBar/blob/master/README.md)
 
 + kotlin language development
-+ 列表快速索引控件（微信联系人，字母索引效果）
-+ API灵活，可自定义配置不同颜色及样式
++ Side quick index effect
++ Flexible and configurable api, customizable style
 
-目前该库已在公司项目中使用，有问题欢迎提issue。
-如果该库对你有帮助，请动动你的小手指，给个star哦🤩
+If it helps, please give a star.🤩
 
-
-#### 效果预览
-<img src="https://github.com/Leo199206/SideBar/blob/master/device-2021-02-19-132024.gif?raw=true" width="300" heght="500" align=center />
+#### Style preview
+<img src="https://github.com/Leo199206/SideBar/blob/master/device-2021-01-21-171055.gif?raw=true" width="300" heght="500" align=center />
 
 
-#### 依赖
-+ 添加maven仓库配置到项目根目录gradle文件下
+#### Dependency
++ Add this in your root build.gradle file (not your module build.gradle file)
 
 ```
 allprojects {
@@ -24,14 +22,13 @@ allprojects {
 }
 ```
 
-+ 添加以下maven依赖配置到app模块，gradle文件下
++ Then, add the library to your module build.gradle
 
 ```
 implementation  'com.jlertele.widget:SideBar:1.0.0'
 ```
 
-#### 添加到布局
-
+#### import layout
 ```
    <?xml version="1.0" encoding="utf-8"?>
    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -78,15 +75,14 @@ implementation  'com.jlertele.widget:SideBar:1.0.0'
    
    </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
-+ 代码配置
+#### Code configuration
 
 ```
 
   side_bar.setLetters(letterArray)
   side_bar.setSideBarListener(object: SideBarView.OnSideBarListener{
             override fun onSideTouchState(sideBarView: SideBarView?, isTouch: Boolean) {
-                //根据isTouch判断是否需要显示提示View，具体参考demo
+                //Determine whether to display the prompt according to isTouch, please refer to the example.
             }
 
             override fun onSideSelected(
@@ -95,26 +91,26 @@ implementation  'com.jlertele.widget:SideBar:1.0.0'
                 currentY: Float,
                 selectedValue: String?
             ) {
-             //滑动选择成功回调，
-             //selectedValue为选中的字符串，position为字符串在letterArray中的位置
-             //可根据selectedValue去列表中查找需要滑动的位置（建议在添加数据时，对位置进行缓存，减少查找操作，参考demo）
+             //Select callback.
+             //selectedValue is the selected result.
+             //According to selectedValue, go to the list to find the position you need to scroll to.
             }
         })
 
 ```
 
+#### Attributes that
 
-#### 已定义样式属性
-
-| 属性  | 说明 |
+| attribute  | Description |
 | --- | --- |
-| sideTextColor | 未选中字体颜色 |
-| sidePressedTextColor | 按下时，选中字体颜色 |
-| sidePressedTextBgColor | 按下时，选中背景颜色 |
-| sideTextSize | 字体大小 | 
-| sideItemSpacing | item间距，默认为10 |
-| sideItemHeight | item高度，不设置时，默认拿字体大小作为高度 |
+| sideTextColor | When not selected, the font color |
+| sidePressedTextColor | When pressed to select, the font color |
+| sidePressedTextBgColor | 
+When pressed to select, the font background color |
+| sideTextSize | font size | 
+| sideItemSpacing | item Spacing, default is 10 |
+| sideItemHeight | item Height,
+When not set, the default is font size height |
 
 #### LICENSE
 SideBar is under the Apache License Version 2.0. See the [LICENSE](https://raw.githubusercontent.com/Leo199206/SideBar/master/LICENSE) file for details.
-
